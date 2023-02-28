@@ -1,0 +1,5 @@
+@use './sass/abstracts' as abs;
+
+body {
+  font-size: abs.$font-size;
+}
