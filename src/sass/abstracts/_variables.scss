@@ -1,1 +1,36 @@
-$font-size: 10rem;
+// ############
+// ## Layout ##
+// ############
+
+$breakpoint-mobile: 37em; //370px
+$breakpoint-desktop: 144em; //1440px
+
+// ############
+// ## COLORS ##
+// ############
+
+//### Primary #####
+$color-primary-400: hsl(223, 87%, 63%);
+
+//### Secondary ####
+$color-secondary-100: hsl(223, 100%, 88%);
+$color-secondary-600: hsl(354, 100%, 66%);
+
+// ### Neutral ####
+$color-neutral-200: hsl(0, 0%, 59%);
+$color-neutral-800: hsl(209, 33%, 12%);
+
+// ##################
+// ### Typography ###
+// ##################
+
+// ### Font body ####
+$font-size-400: 20px;
+
+// ## Font Family ###
+$font-family-400: 'Libre Franklin', sans-serif;
+
+// ## Font weight ###
+$font-weight-thin: 300;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
