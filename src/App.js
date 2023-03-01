@@ -1,9 +1,12 @@
 import './App.scss';
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <Hero />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,30 @@
+@use '../sass/abstracts/' as abs;
+
+.footer {
+  .nav-footer {
+  }
+  .nav-footer__link-box {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(abs.$color-neutral-100, 0.5);
+
+    position: relative;
+    border-radius: 100%;
+  }
+  .nav-footer__logo {
+    font-size: abs.$font-size-400;
+    color: abs.$color-primary-400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    * {
+      display: block;
+    }
+  }
+  .footer__copy-right {
+    color: abs.$color-neutral-100;
+  }
+}
