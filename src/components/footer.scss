@@ -2,10 +2,10 @@
 
 .footer {
   text-align: center;
-  background-color: aliceblue;
-  margin: 3rem auto;
 
   .footer-nav {
+    margin-bottom: 2rem;
+
     &__links-list {
     }
 
@@ -45,8 +45,8 @@
   }
 
   &__copyrights {
-    color: black;
-    font-size: 1.3rem;
+    color: abs.$color-neutral-200;
+    font-size: 1.2rem;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
       'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }

@@ -1,0 +1,95 @@
+@use '../sass/abstracts/' as abs;
+
+.header {
+  text-align: center;
+  width: 70%;
+  margin: 5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 30%;
+  // background-color: aliceblue;
+
+  &__titles-box {
+  }
+
+  &__logo-img {
+    width: 7rem;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    font-weight: 200;
+    font-family: abs.$font-family-400;
+    font-size: 2.8rem;
+    color: abs.$color-neutral-200;
+    margin-bottom: 2rem;
+
+    strong {
+      color: black;
+    }
+  }
+
+  &__sub {
+    font-family: abs.$font-family-400;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  .cta-form {
+    width: 100%;
+    // margin: 5rem auto 10rem; // top left+right bottom
+
+    &__email-input,
+    &__cta-button {
+      font-family: inherit;
+      display: block;
+      width: 100%;
+      height: 5rem;
+      box-shadow: 0 2rem 4rem rgba(abs.$color-primary-400, 0.15);
+      border-radius: 5rem;
+      letter-spacing: 1px;
+
+      &[type='email']:focus {
+        background-color: rgba(abs.$color-secondary-100, 0.2);
+        caret-color: abs.$color-primary-400;
+
+        &:invalid {
+          background-color: red;
+        }
+      }
+    }
+
+    &__email-input {
+      font-size: 1.5rem;
+      border: 1px solid rgba(abs.$color-primary-400, 0.5);
+      padding-left: 4rem;
+      font-weight: 100;
+      margin-bottom: 2rem;
+
+      &::placeholder {
+        color: abs.$color-neutral-150;
+      }
+    }
+
+    &__cta-button {
+      background-color: abs.$color-primary-400;
+      color: white;
+      font-family: inherit;
+      font-size: 1.5rem;
+      border: none;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(abs.$color-primary-400, 0.8);
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+      }
+      &:active {
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+          inset -2px -2px 3px rgba(abs.$color-primary-400, 0.5);
+        transform: translateY(2px);
+      }
+    }
+  }
+}

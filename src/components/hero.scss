@@ -1,0 +1,10 @@
+.hero {
+  width: 80%;
+  flex: 0 0 30%;
+
+  &__dashboard-img {
+    width: 100%;
+    // min-width: 48rem;
+    object-fit: fill;
+  }
+}
