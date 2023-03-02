@@ -20,3 +20,9 @@ body {
   font-family: abs.$font-family-400, sans-serif;
   min-height: 100vh;
 }
+
+@media (min-width: 75em) {
+  html {
+    font-size: 70%;
+  }
+}

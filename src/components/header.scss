@@ -92,4 +92,16 @@
       }
     }
   }
+
+  @media (min-width: 75em) {
+    .cta-form {
+      display: flex;
+      gap: 2rem;
+
+      &__cta-button {
+        flex: 0 0 25%;
+        font-size: 1.25rem;
+      }
+    }
+  }
 }
