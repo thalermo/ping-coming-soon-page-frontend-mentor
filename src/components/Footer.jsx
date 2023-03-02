@@ -7,25 +7,17 @@ import { SiInstagram } from 'react-icons/si';
 function Footer() {
   return (
     <footer className='footer'>
-
-      <nav className='nav-footer'>
-        <div className="nav-footer__link-box">
-          <a className='nav-footer__logo' href="#"><FaFacebookF /></a>
-        </div>
-        <div className="nav-footer__link-box">
-          <a className='nav-footer__logo' href="#"><SiTwitter /></a>
-        </div>
-        <div className="nav-footer__link-box">
-          <a className='nav-footer__logo' href="#"><SiInstagram /></a>
-        </div>
+      <nav className='footer-nav'>
+        <ul className='footer-nav__links-list'>
+          <li className='footer-nav__list-item'><a className='footer-nav__link' href="#"><FaFacebookF /></a></li>
+          <li className='footer-nav__list-item'><a className='footer-nav__link' href="#"><SiTwitter /></a></li>
+          <li className='footer-nav__list-item'><a className='footer-nav__link' href="#"><SiInstagram /></a></li>
+        </ul>
       </nav>
-
-      <span className='footer__copy-right'>
-        &copy; Copyright Ping. All rights reserved.
-      </span>
-
+      <span className='footer__copyrights'>&copy; Copyright Ping. All rights reserved.</span>
     </footer>
-  );
+  )
+
 }
 
 export default Footer;
