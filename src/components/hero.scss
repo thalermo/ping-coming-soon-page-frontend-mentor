@@ -1,14 +1,17 @@
 .hero {
   width: 100%;
-  flex: 0 0 40%;
+  flex: 0 0 30%;
   text-align: center;
 
   &__dashboard-img {
-    width: 80%;
-    height: 100%;
-    min-width: 45rem;
-    // max-width: 40vw;
-    object-fit: fill;
+    width: 90%;
+    max-width: 60rem;
     filter: saturate(1.5);
+  }
+
+  @media (min-width: 65em) {
+    &__dashboard-img {
+      width: 70%;
+    }
   }
 }
